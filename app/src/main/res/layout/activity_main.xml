@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/screen">
+
+    <LinearLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_rounded_corner">
+
+      <ImageButton
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_menu_24"
+            app:tint="@color/white1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/page_title"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@drawable/title_image"
+            android:textColor="@color/white1"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Add Notes:-"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white1"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/notes_btn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btntask"
+        android:text="@string/notes"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="@string/calculators"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white1"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/mark_btn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btnmark"
+        android:text="@string/mark"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/gpa_btn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btngpa"
+        android:layout_margin="15dp"
+        android:text="@string/gpa"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/cgpa_btn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btncgpa"
+        android:text="@string/cgpa"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

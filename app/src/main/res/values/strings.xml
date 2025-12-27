@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Study Mate Pro</string>
+    <string name="sign_up">Sign-Up</string>
+
+    <string name="todo">TODO</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password (6 characters).</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="login1">LOGIN</string>
+    <string name="join_us_again">Join us again!</string>
+    <string name="create_a_new_account">Create a New Account?</string>
+    <string name="button">Button</string>
+    <string name="calculator">Calculator:-</string>
+    <string name="notes">Notes</string>
+    <string name="mark">Mark</string>
+    <string name="gpa">GPA</string>
+    <string name="cgpa">CGPA</string>
+    <string name="calculators">Calculators:-</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="mark_calculator">Mark Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="max_mark_is_50">Max Mark is 50</string>
+    <string name="marks_in_cat1">Marks in CAT1</string>
+    <string name="marks_in_cat2">Marks in CAT2</string>
+    <string name="expected_marks_in_fat">Expected marks in FAT</string>
+    <string name="max_mark_is_100">Max Mark is 100</string>
+    <string name="max_mark_is_30">Max Mark is 30</string>
+    <string name="maxmimum_27">Maxmimum 27</string>
+    <string name="credits_completed">Credits completed</string>
+    <string name="current_cgpa">Current CGPA</string>
+    <string name="credits_taken_this_semester">Credits taken this semester</string>
+    <string name="maximum_180">Maximum 180</string>
+    <string name="maximum_10">Maximum 10</string>
+    <string name="grade">Grade</string>
+    <string name="credits">Credits</string>
+</resources>

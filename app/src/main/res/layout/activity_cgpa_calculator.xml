@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CGPA_calculator"
+    android:background="@drawable/screen"
+    tools:ignore="ScrollViewCount">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/markTitle"
+            android:layout_width="328dp"
+            android:layout_height="139dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/semicircle"
+            android:gravity="center"
+            android:text="CGPA Calculator"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/credits"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@+id/markTitle"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/credits_completed"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint1"
+            android:layout_below="@+id/credits"
+            android:text="@string/maximum_180"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/cgpa"
+            android:layout_below="@+id/hint1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/current_cgpa"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint2"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/cgpa"
+            android:text="@string/maximum_10"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/creditTSem"
+            android:layout_below="@+id/hint2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/credits_taken_this_semester"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint3"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/creditTSem"
+            android:text="Maximum 27"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/gpa"
+            android:layout_below="@+id/hint3"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="GPA of this semester"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint4"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/gpa"
+            android:text="@string/maximum_10"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+
+
+
+        <TextView
+            android:id="@+id/cgpaOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_below="@id/hint4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="65dp"
+            android:background="@drawable/rounded_rectangle"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_below="@id/cgpaOutput"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="96dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/calculate"
+            android:textColor="@color/white1"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".GPA_calculatorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/title_bar_layout"
+                android:layout_width="328dp"
+                android:layout_height="140dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/semicircle"
+                android:gravity="center"
+                android:text="GPA Calculator"
+                android:textColor="@color/white1"
+                android:textSize="33sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bar_layout"
+            android:id="@+id/gpaIp1"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/grade1"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit1"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp1"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:id="@+id/gpaIp2">
+
+            <EditText
+                android:id="@+id/grade2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove2"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp2"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:id="@+id/gpaIp3">
+
+            <EditText
+                android:id="@+id/grade3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove3"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp3"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:id="@+id/gpaIp4">
+
+            <EditText
+                android:id="@+id/grade4"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit4"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove4"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp4"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gpaIp5">
+
+            <EditText
+                android:id="@+id/grade5"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit5"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove5"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp5"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gpaIp6">
+
+            <EditText
+                android:id="@+id/grade6"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit6"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove6"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp6"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gpaIp7">
+
+            <EditText
+                android:id="@+id/grade7"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit7"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove7"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpaIp7"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gpaIp8">
+
+            <EditText
+                android:id="@+id/grade8"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/grade"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/credit8"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/credits"
+                android:inputType="textCapCharacters"
+                android:padding="16dp"
+                android:textColor="@color/white1"
+                android:textColorHint="@color/gray"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove8"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/baseline_remove_circle_24"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/gpaOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_below="@id/gpaIp8"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="74dp"
+            android:background="@drawable/rounded_rectangle"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gpa_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_below="@id/gpaOutput"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="96dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/calculate"
+            android:textColor="@color/white1"
+            android:textSize="22sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_gpa_btn"
+            android:layout_below="@id/gpa_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/white1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/baseline_add_24"
+            app:fabCustomSize="65dp"
+            app:maxImageSize="35dp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

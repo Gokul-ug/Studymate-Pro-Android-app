@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarkCalculatorActivity"
+    android:background="@drawable/screen"
+    tools:ignore="ScrollViewCount">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/markTitle"
+            android:layout_width="328dp"
+            android:layout_height="139dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/semicircle"
+            android:gravity="center"
+            android:text="@string/mark_calculator"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/cat1"
+            android:layout_below="@+id/markTitle"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/marks_in_cat1"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint1"
+            android:layout_below="@+id/cat1"
+            android:text="@string/max_mark_is_50"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/cat2"
+            android:layout_below="@+id/hint1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/marks_in_cat2"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint2"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/cat2"
+            android:text="@string/max_mark_is_50"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/fat"
+            android:layout_below="@+id/hint2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/expected_marks_in_fat"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint3"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/fat"
+            android:text="@string/max_mark_is_100"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/internal"
+            android:layout_below="@+id/hint3"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="Marks in Internals"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint4"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/internal"
+            android:text="@string/max_mark_is_30"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+
+
+
+        <EditText
+            android:id="@+id/lab"
+            android:layout_below="@+id/hint4"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_corner1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="Marks in LAB"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="@color/white1"
+            android:textColorHint="@color/gray"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck"
+            android:autofillHints="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint5"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/lab"
+            android:text="Max Mark is 100"
+            android:textColor="@color/gray"
+            android:layout_marginStart="30dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/markOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_below="@id/hint5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="74dp"
+            android:background="@drawable/rounded_rectangle"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_below="@id/markOutput"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="96dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="@string/calculate"
+            android:textColor="@color/white1"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
